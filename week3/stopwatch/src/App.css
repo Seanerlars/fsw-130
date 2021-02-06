@@ -1,0 +1,19 @@
+.App {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border: solid black 1px;
+
+}
+
+.buttons {
+    padding: 10px;
+    justify-content:end; 
+    font-size: 10px;
+}
+
+span {
+    padding: 5px;
+    font-size: 40px;
+}
