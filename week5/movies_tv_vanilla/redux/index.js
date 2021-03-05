@@ -1,19 +1,16 @@
-import movieReducer from './movies'
-import showReducer from './shows'
-
 const redux = require("redux")
 const {combineReducers, createStore} = redux
+import movieReducer from "./movieReducer"
+import tvReducer from "./tvReducer"
 
 const rootReducer = combineReducers({
-  movie: movieReducer,
-  show: showReducer
+    count: countReducer,
+    movies: movieReducer,
+    tvshows : tvReducer
 })
 
 const store = createStore(rootReducer)
-
 store.subscribe(() => {
     console.log(store.getState())
 })
-
 export default store
-

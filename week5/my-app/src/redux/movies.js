@@ -9,15 +9,16 @@ export function addMovie(movie){
         payload: movie
     }
 }
-export function delMovie(movie)
+export function delMovie(movie){
     return {
         type: "DEL_MOVIE",
         payload: movie
+    }
 }
 export default function movieReducer(movies = [], action){
     switch(action.type) {
         case "GET_MOVIES":
-            return movie
+            return movies
         case "ADD_MOVIE":
             return [...movies, action.payload]
         case "DEL_MOVIES": {
